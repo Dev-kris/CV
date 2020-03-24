@@ -1,0 +1,44 @@
+body {
+     font-family: Monaco, sans-serif;
+     background-color: #F5E3E7;
+     padding: 20px;
+}
+ p {
+     font-style: italic;
+     font-size: .8em;
+     color: red;
+}
+ h1 {
+     text-decoration: underline;
+     letter-spacing: .1em;
+     text-transform: uppercase;
+     font-style: italic;
+     border-style: dashed;
+     width: fit-content;
+     padding: .1em;
+     box-sizing: border-box;
+     font-family: Monaco, sans-serif;
+	 margin-bottom:0em;
+}
+ h2 {
+     text-decoration: underline;
+     letter-spacing: .21em;
+	 margin-bottom:0em;
+}
+ hr {
+     border-color: #4A262F;
+     border-width: 1px;
+}
+ a:visited {
+     color: red;
+}
+ a:hover {
+     background-color: lightgreen;
+}
+ a:active {
+     text-transform: uppercase;
+     color: pink;
+}
+ a {
+     text-decoration: none;
+}
