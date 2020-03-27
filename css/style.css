@@ -1,44 +1,170 @@
-body {
-     font-family: Monaco, sans-serif;
-     background-color: #F5E3E7;
-     padding: 20px;
+.resume {
+    display: grid;
+    grid-template-columns: 0.5fr  2fr;
+    grid-template-rows: 0.75fr 2fr  3fr  1fr;
+    box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+    grid-template-areas  :
+        "photo myname"
+        "contact education"
+        "about work"
+        "hobbies community";
 }
- p {
-     font-style: italic;
-     font-size: .8em;
-     color: red;
+
+.contact {
+    grid-area: contact;
+    background-color: #fcfbe8;
 }
- h1 {
-     text-decoration: underline;
-     letter-spacing: .1em;
-     text-transform: uppercase;
-     font-style: italic;
-     border-style: dashed;
-     width: fit-content;
-     padding: .1em;
-     box-sizing: border-box;
-     font-family: Monaco, sans-serif;
-	 margin-bottom:0em;
+
+.photo {
+    grid-area       : photo;
+    background-color: #fcfbe8;
+   
 }
- h2 {
-     text-decoration: underline;
-     letter-spacing: .21em;
-	 margin-bottom:0em;
+
+.photo img {
+    width: 133px;
+    position: relative;
+    left: 30%;
+    margin-top: 15px
+    
 }
- hr {
-     border-color: #4A262F;
-     border-width: 1px;
+
+.about {
+    grid-area       : about;
+    background-color: #fcfbe8;
 }
- a:visited {
-     color: red;
+
+.work {
+    grid-area: work;
 }
- a:hover {
-     background-color: lightgreen;
+
+.education {
+    grid-area       : education;
+    ;
 }
- a:active {
-     text-transform: uppercase;
-     color: pink;
+
+.hobbies {
+    grid-area       : hobbies;
+    background-color: #dbd9d3;
 }
- a {
-     text-decoration: none;
+
+.hobbies img {
+    width: 22%;
+    height: auto;
+    position: relative;
+    top: 40%;
+    left: 15%;
+    
+    
 }
+
+.myname {
+    grid-area       : myname;
+    text-align: left
+}
+
+.community {
+    grid-area: community;
+}
+
+hr {
+    border-color:#6393bf;
+    width: 90%;
+}
+
+h2 {
+    color: antiquewhite;
+    background: #6393bf;
+    text-align: center;
+    padding: 5px 5px;
+    margin-top: 0;
+    
+}
+
+p {
+    padding: 0px 20px;
+}
+
+h1 {
+    font-family: monospace, serif;
+    font-size: 2.5em;
+    
+    margin-bottom: 0px;
+    padding-left: 1em;
+    
+}
+
+h3 {
+    font-family: monospace, serif;
+    font-size: 2em;
+    
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 1em;
+}
+
+p2 {
+        margin-left: 5em;
+        padding: 21px 20px;
+        font-size: 1.2em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    
+}
+
+.exp-subgrid {
+    display: grid;
+    margin: 10px 20px 0px 30px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas  :
+        "exp-left exp-right";
+}
+
+.exp-left {
+    grid-area: exp-left;
+}
+
+.exp-right {
+    grid-area: exp-right;
+}
+
+.ref-subgrid {
+    display: grid;
+    margin: 10px 20px 0px 30px;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr;
+        grid-template-areas  :
+        "ref-left ref-right";
+}
+
+.ref-left {
+    grid-area: ref-left;
+    text-align: center;
+}
+
+.ref-right {
+    grid-area: ref-right;
+    text-align: center;
+}
+
+.edu-subgrid {
+    display: grid;
+    margin: 10px 20px 0px 30px;
+    grid-template-columns: 1fr  2fr;
+    grid-template-rows: 1fr 1fr;
+        grid-template-areas  :
+        "edu-left edu-right";
+}
+
+.edu-left {
+    grid-area: edu-left;
+}
+
+.edu-right {
+    grid-area: edu-right;
+}
+
+
