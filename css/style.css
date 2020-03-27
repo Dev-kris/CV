@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 0.5fr  2fr;
     grid-template-rows: 0.75fr 2fr  3fr  1fr;
-    box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.35);
     grid-template-areas  :
         "photo myname"
         "contact education"
