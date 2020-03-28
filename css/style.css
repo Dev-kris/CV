@@ -31,7 +31,7 @@
 
 .photo img {
     max-width: 60%;
-    max-height: auto;
+    max-height: 60%;
     border-radius: 50%;
     margin: 45px auto;
     
