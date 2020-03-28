@@ -1,6 +1,6 @@
 .resume {
     display: grid;
-    grid-template-columns: minmax(33%,2fr) minmax(66%,5fr);
+    grid-template-columns: minmax(min-content, 200px) minmax(400px, 1fr);
     grid-template-areas  :
         "photo myname"
         "contact education"
