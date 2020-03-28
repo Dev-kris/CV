@@ -9,8 +9,8 @@
 }
 
 .wrapper{
-  max-width: 900px;
-  margin: auto;
+  max-width: 1400px;
+  margin: 5px 10px 5px 20px;
     font-family: Garamond, Times ,Georgia;
     font-size: 18px;
     background-color: rgb(99, 147, 191,.4);
@@ -115,7 +115,7 @@ p2 {
 
 .exp-subgrid {
     display: grid;
-    margin: 10px 20px 10px 30px;
+    margin: 10px 0px 10px 30px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
         grid-template-areas  :
@@ -151,7 +151,7 @@ p2 {
 
 .edu-subgrid {
     display: grid;
-    margin: 10px 20px 10px 30px;
+    margin: 10px 0px 10px 30px;
     grid-template-columns: 1fr  2fr;
     grid-template-rows: 1fr;
         grid-template-areas  :
