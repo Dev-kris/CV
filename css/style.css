@@ -1,15 +1,28 @@
-.wrapper{
-  max-width: 1200px;
-  margin: 5px 10px 5px 20px;
-    font-family: Times ,Georgia;
-    font-size: 18px;
-    background-color: rgb(99, 147, 191,.4);
+/* 
+    WTF are you using to write this? The spacing is insane on some of these
+*/
+
+/*
+    - First, you need to take off the base margin from HTML and Body. Since that's creating the white line around your page
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
 }
 
+/* 
+    - Let's say you come back a year to this project, would you remember that "resume" changes the display of something to grid?
+    Separate layout from theme and use meaningful names
+*/
 .resume {
     display: grid;
-    grid-template-columns: minmax(min-content, 200px) minmax(400px, 1fr);
-    height: 10px;
+    grid-template-columns: 0.5fr  2fr;
+    grid-template-rows: 0.75fr 2fr  3fr  1fr;
+    /* 
+        - This is technically fine. Sort of. But you don't really need to do this. You basically have two columns. grid-template-columns: 2fr 5fr; would work just fine.
+        Then you could remove 'grid-area' from the below items
+    */
     grid-template-areas  :
         "photo myname"
         "contact education"
@@ -17,94 +30,119 @@
         "hobbies community";
 }
 
-
 .contact {
     grid-area: contact;
+    /* The background color is the same for all of these - so just apply it to the parent that holds them all */
+    background-color: #fcfbe8;
 }
 
 .photo {
-    grid-area: photo;
-    display: flex;
+    grid-area       : photo;
+    background-color: #fcfbe8;
+   
 }
 
+/*
+    - There's almost no situation where selecting the child of something is a good idea.
+    If you want to change the style of the img, then apply a class
+*/
 .photo img {
-    width: 60%;
-    height: auto;
-    max-height: 160px;
-    border-radius: 50%;
-    margin: 45px auto;   
+    width: 133px;
+    position: relative;
+    left: 30%;
+    margin-top: 15px
+    
 }
 
 .about {
-    grid-area: about;
+    grid-area       : about;
+    background-color: #fcfbe8;
 }
 
 .work {
     grid-area: work;
-    background-color: white;
 }
 
 .education {
     grid-area       : education;
-    background-color: white;
+    ;
 }
 
 .hobbies {
     grid-area       : hobbies;
+    background-color: #dbd9d3;
 }
 
+/* 
+    - Again, stop selecting children
+    - You don't need to do position:relative. Set display: flex on the .hobbies. Wrap the img tags in a single <div> and apply margin: auto to that div
+*/
 .hobbies img {
     width: 22%;
     height: auto;
     position: relative;
     top: 40%;
     left: 15%;
+    
+    
 }
 
 .myname {
     grid-area       : myname;
-    text-align: left;
-    background-color: white;
+    text-align: left
 }
 
 .community {
     grid-area: community;
-    background-color: white;
 }
 
+/* You don't need hr to create lines. Wrap the content in a <div> and apply border-bottom to it. That way the line isn't off center */
 hr {
     border-color:#6393bf;
     width: 90%;
 }
+
+/* 
+    - Stop this. Don't apply directly to tags unless it's to strip base styles from the body, html or header tags.
+    The only reason you use different tags (h1, h2, p, div, section) is to describe to search engines the purpose
+    of your page. They shouldn't have anything to do with your style
+*/
 
 h2 {
     color: antiquewhite;
     background: #6393bf;
     text-align: center;
     padding: 5px 5px;
-    margin-top: 0; 
+    margin-top: 0;
+    
 }
 
 p {
     padding: 0px 20px;
 }
 
+/* 
+    If you're going to use em, then try setting font-size: 10px on the body. That way sizing is consistent
+*/
 h1 {
     font-family: monospace, serif;
     font-size: 2.5em;
     
     margin-bottom: 0px;
     padding-left: 1em;
+    
 }
 
 h3 {
     font-family: monospace, serif;
     font-size: 2em;
+    
     margin-bottom: 0px;
     margin-top: 5px;
     padding-left: 1em;
 }
 
+/* p2 isn't a tag */
 p2 {
         margin-left: 5em;
         padding: 21px 20px;
@@ -118,9 +156,9 @@ p2 {
 
 .exp-subgrid {
     display: grid;
-    margin: 10px 5% 10px 30px;
+    margin: 10px 20px 0px 30px;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas  :
         "exp-left exp-right";
 }
@@ -154,9 +192,9 @@ p2 {
 
 .edu-subgrid {
     display: grid;
-    margin: 10px 5% 10px 30px;
+    margin: 10px 20px 0px 30px;
     grid-template-columns: 1fr  2fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
         grid-template-areas  :
         "edu-left edu-right";
 }
@@ -169,27 +207,4 @@ p2 {
     grid-area: edu-right;
 }
 
-a { 
-  position: relative;
-}
-a:hover{
-    background: lightgreen;
-}
 
-a:visited{
-    color: red;
-}
-
-a:active{
-    top: 1px;
-}
-
-/*@media all and (max-width:768px){
-    html {
-        min-width: 300px;
-        display: block;
-        width: 50%;
-    }
-
-}
-*/
