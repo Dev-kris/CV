@@ -1,6 +1,15 @@
+.wrapper{
+  max-width: 1200px;
+  margin: 5px 10px 5px 20px;
+    font-family: Times ,Georgia;
+    font-size: 18px;
+    background-color: rgb(99, 147, 191,.4);
+}
+
 .resume {
     display: grid;
     grid-template-columns: minmax(min-content, 200px) minmax(400px, 1fr);
+    height: 10px;
     grid-template-areas  :
         "photo myname"
         "contact education"
@@ -8,13 +17,7 @@
         "hobbies community";
 }
 
-.wrapper{
-  max-width: 1400px;
-  margin: 5px 10px 5px 20px;
-    font-family: Garamond, Times ,Georgia;
-    font-size: 18px;
-    background-color: rgb(99, 147, 191,.4);
-}
+
 .contact {
     grid-area: contact;
 }
@@ -115,7 +118,7 @@ p2 {
 
 .exp-subgrid {
     display: grid;
-    margin: 10px 0px 10px 30px;
+    margin: 10px 5% 10px 30px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
         grid-template-areas  :
@@ -151,7 +154,7 @@ p2 {
 
 .edu-subgrid {
     display: grid;
-    margin: 10px 0px 10px 30px;
+    margin: 10px 5% 10px 30px;
     grid-template-columns: 1fr  2fr;
     grid-template-rows: 1fr;
         grid-template-areas  :
