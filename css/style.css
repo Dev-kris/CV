@@ -13,7 +13,7 @@
   margin: auto;
     font-family: Garamond, Times ,Georgia;
     font-size: 18px;
-    background: linear-gradient(#C7C6C6,#fcfbe8)
+    background: linear-gradient(#97cef7,#fcfbe8)
 }
 .contact {
     grid-area: contact;
@@ -166,6 +166,18 @@ p2 {
     grid-area: edu-right;
 }
 
+
+a:hover{
+    background: lightblue;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    text-transform: uppercase;
+}
 
 /*@media all and (max-width:768px){
     html {
