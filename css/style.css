@@ -1,7 +1,6 @@
 .resume {
     display: grid;
-    grid-template-columns: 2fr  5fr;
-    grid-template-rows: 0.75fr 2fr  3fr  1fr;
+    grid-template-columns: minmax(33%,2fr) minmax(66%,5fr);
     grid-template-areas  :
         "photo myname"
         "contact education"
@@ -20,23 +19,18 @@
     grid-area: contact;
 }
 
-/* background-color: linear-gradient(red, yellow) */
-
 .photo {
     grid-area: photo;
     display: flex;
-
-   
 }
 
 .photo img {
-    max-width: 60%;
-    max-height: 60%;
+    width: 60%;
+    height: auto;
+    max-height: 160px;
     border-radius: 50%;
-    margin: 45px auto;
-    
+    margin: 45px auto;   
 }
-
 
 .about {
     grid-area: about;
@@ -85,8 +79,7 @@ h2 {
     background: #6393bf;
     text-align: center;
     padding: 5px 5px;
-    margin-top: 0;
-    
+    margin-top: 0; 
 }
 
 p {
@@ -99,13 +92,11 @@ h1 {
     
     margin-bottom: 0px;
     padding-left: 1em;
-    
 }
 
 h3 {
     font-family: monospace, serif;
     font-size: 2em;
-    
     margin-bottom: 0px;
     margin-top: 5px;
     padding-left: 1em;
@@ -124,9 +115,9 @@ p2 {
 
 .exp-subgrid {
     display: grid;
-    margin: 10px 20px 0px 30px;
+    margin: 10px 20px 10px 30px;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
         grid-template-areas  :
         "exp-left exp-right";
 }
@@ -160,9 +151,9 @@ p2 {
 
 .edu-subgrid {
     display: grid;
-    margin: 10px 20px 0px 30px;
+    margin: 10px 20px 10px 30px;
     grid-template-columns: 1fr  2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
         grid-template-areas  :
         "edu-left edu-right";
 }
@@ -176,3 +167,12 @@ p2 {
 }
 
 
+/*@media all and (max-width:768px){
+    html {
+        min-width: 300px;
+        display: block;
+        width: 50%;
+    }
+
+}
+?
