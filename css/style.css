@@ -1,6 +1,6 @@
 .resume {
     display: grid;
-    grid-template-columns: 0.5fr  2fr;
+    grid-template-columns: 2fr  5fr;
     grid-template-rows: 0.75fr 2fr  3fr  1fr;
     grid-template-areas  :
         "photo myname"
@@ -9,42 +9,51 @@
         "hobbies community";
 }
 
+.wrapper{
+  max-width: 900px;
+  margin: auto;
+    font-family: Garamond, Times ,Georgia;
+    font-size: 18px;
+    background: linear-gradient(#C7C6C6,#fcfbe8)
+}
 .contact {
     grid-area: contact;
-    background-color: #fcfbe8;
 }
 
+/* background-color: linear-gradient(red, yellow) */
+
 .photo {
-    grid-area       : photo;
-    background-color: #fcfbe8;
+    grid-area: photo;
+    display: flex;
+
    
 }
 
 .photo img {
-    width: 133px;
-    position: relative;
-    left: 30%;
-    margin-top: 15px
+    max-width: 60%;
+    max-height: auto;
+    border-radius: 50%;
+    margin: 45px auto;
     
 }
 
+
 .about {
-    grid-area       : about;
-    background-color: #fcfbe8;
+    grid-area: about;
 }
 
 .work {
     grid-area: work;
+    background-color: white;
 }
 
 .education {
     grid-area       : education;
-    ;
+    background-color: white;
 }
 
 .hobbies {
     grid-area       : hobbies;
-    background-color: #dbd9d3;
 }
 
 .hobbies img {
@@ -53,17 +62,17 @@
     position: relative;
     top: 40%;
     left: 15%;
-    
-    
 }
 
 .myname {
     grid-area       : myname;
-    text-align: left
+    text-align: left;
+    background-color: white;
 }
 
 .community {
     grid-area: community;
+    background-color: white;
 }
 
 hr {
