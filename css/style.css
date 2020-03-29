@@ -1,13 +1,13 @@
 .wrapper{
-     max-width: 1200px;
-     margin: 5px 10px 5px 20px;
+     max-width: 1400px;
+     margin: 5px 1px 0px 20px;
      font-family: Times ,Georgia;
      font-size: 18px;
      background-color: rgb(99, 147, 191,.4);
 }
  .body-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 300px) minmax(500px, 900px));
+     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr) minmax(500px, 5fr));
 }
  .photo {
      order: 1;
@@ -83,7 +83,7 @@
 }
  .exp-subgrid {
      display: grid;
-     margin: 10px 5% 10px 30px;
+     margin: 10px 5px 10px 30px;
      grid-template-columns: 1fr 2fr;
      grid-template-rows: 1fr;
      grid-template-areas : "exp-left exp-right";
@@ -111,7 +111,7 @@
 }
  .edu-subgrid {
      display: grid;
-     margin: 10px 5% 10px 30px;
+     margin: 10px 5px 10px 30px;
      grid-template-columns: 1fr 2fr;
      grid-template-rows: 1fr;
      grid-template-areas : "edu-left edu-right";
@@ -134,11 +134,3 @@
  a:active{
      top: 1px;
 }
- @media only screen and (max-width: 600px) {
-     body-grid {
-         display: grid;
-         grid-template-columns: 1fr !important;
-         grid-template-areas : "photo " "myname" "work" "education" "contact " "about " "community" "hobbies " !important;
-    }
-}
- 
