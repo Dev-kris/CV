@@ -2,8 +2,8 @@
      max-width: 1400px;
      margin: 5px 1px 0px 20px;
      font-family: Times ,Georgia;
-     font-size: 18px;
-     background-color: rgb(99, 147, 191,.4);
+     font-size: 16px;
+     background-color: rgb(919, 147, 191,.4);
 }
  .body-grid {
      display: grid;
