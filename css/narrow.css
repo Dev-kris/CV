@@ -1,9 +1,7 @@
 .wrapper{
-     max-width: 1400px;
-     margin: 5px 1px 0px 20px;
      font-family: Times ,Georgia;
      font-size: 16px;
-     background-color: rgb(919, 147, 191,.4);
+     background-color: rgb(99, 147, 191,.4);
 }
  .body-grid {
      display: grid;
@@ -41,7 +39,7 @@
 
 .hobby-pics {
     display: flex;
-    margin:0px 20%;
+    
 }
 
  .community{
@@ -56,26 +54,24 @@
      margin-top: 0;
 }
  .p-padding {
-     padding: 0px 20px;
+     padding: 1px 5px;
      word-wrap: break-word;
 }
  .name-title {
      font-family: monospace, serif;
-     font-size: 45pt;
+     font-size: 25pt;
      margin-bottom: -20px;
-     padding-left: 66px;
 }
  .section-title {
      font-family: monospace, serif;
      font-size: 33pt;
      margin-bottom: 0px;
      margin-top: 5px;
-     margin-left: 30px;
      border-bottom: solid;
      border-color:#6393bf;
 }
  .name-subtitle {
-     margin-left: 70px;
+     margin-left: 0px;
      font-size: 1.2em;
 }
  .subtitle {
