@@ -7,7 +7,7 @@
 }
  .body-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr) minmax(500px, 5fr));
+     grid-template-columns:minmax(250px, 2fr) minmax(700px, 5fr);
 }
  .photo {
      order: 1;
@@ -84,43 +84,22 @@
  .exp-subgrid {
      display: grid;
      margin: 10px 5px 10px 30px;
-     grid-template-columns: 1fr 2fr;
-     grid-template-rows: 1fr;
-     grid-template-areas : "exp-left exp-right";
+     grid-template-columns: 1fr 3fr;
 }
- .exp-left {
-     grid-area: exp-left;
-}
- .exp-right {
-     grid-area: exp-right;
-}
+
  .ref-subgrid {
      display: grid;
      margin: 10px 20px 0px 30px;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr;
-     grid-template-areas : "ref-left ref-right";
+     grid-template-columns: 1fr 1fr;   
 }
- .ref-left {
-     grid-area: ref-left;
-     text-align: center;
-}
- .ref-right {
-     grid-area: ref-right;
-     text-align: center;
+
+.ref-wrap {
+    word-wrap: break-word;
 }
  .edu-subgrid {
      display: grid;
      margin: 10px 5px 10px 30px;
-     grid-template-columns: 1fr 2fr;
-     grid-template-rows: 1fr;
-     grid-template-areas : "edu-left edu-right";
-}
- .edu-left {
-     grid-area: edu-left;
-}
- .edu-right {
-     grid-area: edu-right;
+     grid-template-columns: 1fr 3fr;
 }
  a {
      position: relative;
