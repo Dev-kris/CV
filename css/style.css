@@ -1,200 +1,144 @@
 .wrapper{
-  max-width: 1200px;
-  margin: 5px 10px 5px 20px;
-    font-family: Times ,Georgia;
-    font-size: 18px;
-    background-color: rgb(99, 147, 191,.4);
+     max-width: 1200px;
+     margin: 5px 10px 5px 20px;
+     font-family: Times ,Georgia;
+     font-size: 18px;
+     background-color: rgb(99, 147, 191,.4);
 }
-
-.resume {
-    display: grid;
-    grid-template-columns: minmax(min-content, 200px) minmax(400px, 1fr);
-    grid-template-areas  :
-        "photo myname"
-        "contact education"
-        "about work"
-        "hobbies community";
+ .body-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 300px) minmax(500px, 900px));
 }
-
-
-.contact {
-    grid-area: contact;
+ .photo {
+     order: 1;
+     display: flex;
+     height: auto;
+     margin: 45px auto;
 }
-
-.photo {
-    grid-area: photo;
-    display: flex;
+ .myname{
+     order: 2;
+     text-align: left;
+     background-color: white;
 }
-
-.photo img {
-    width: 60%;
-    height: auto;
-    max-height: 160px;
-    border-radius: 50%;
-    margin: 45px auto;   
+ .contact{
+     order: 3;
 }
-
-.about {
-    grid-area: about;
+ .education{
+     order:4;
+     background-color: white;
 }
-
-.work {
-    grid-area: work;
-    background-color: white;
+ .about{
+     order: 5;
 }
-
-.education {
-    grid-area       : education;
-    background-color: white;
+ .work{
+     order: 6;
+     background-color: white;
 }
-
-.hobbies {
-    grid-area       : hobbies;
+ .hobbies{
+     order: 7;
 }
-
-.hobbies img {
-    width: 22%;
-    height: auto;
-    position: relative;
-    top: 40%;
-    left: 15%;
+ .hobbies img {
+     width: 22%;
+     height: auto;
+     position: relative;
+     top: 40%;
+     left: 15%;
 }
-
-.myname {
-    grid-area       : myname;
-    text-align: left;
-    background-color: white;
+ .community{
+     order: 8;
+     background-color: white;
 }
-
-.community {
-    grid-area: community;
-    background-color: white;
+ .left-bar-titles {
+     color: antiquewhite;
+     background: #6393bf;
+     text-align: center;
+     padding: 5px 5px;
+     margin-top: 0;
 }
-
-hr {
-    border-color:#6393bf;
-    width: 90%;
+ .p-padding {
+     padding: 0px 20px;
+     word-wrap: break-word;
 }
-
-h2 {
-    color: antiquewhite;
-    background: #6393bf;
-    text-align: center;
-    padding: 5px 5px;
-    margin-top: 0; 
+ .name-title {
+     font-family: monospace, serif;
+     font-size: 45pt;
+     margin-bottom: -20px;
+     padding-left: 66px;
 }
-
-p {
-    padding: 0px 20px;
+ .section-title {
+     font-family: monospace, serif;
+     font-size: 33pt;
+     margin-bottom: 0px;
+     margin-top: 5px;
+     margin-left: 30px;
+     border-bottom: solid;
+     border-color:#6393bf;
 }
-
-h1 {
-    font-family: monospace, serif;
-    font-size: 2.5em;
-    
-    margin-bottom: 0px;
-    padding-left: 1em;
+ .name-subtitle {
+     margin-left: 70px;
+     font-size: 1.2em;
 }
-
-h3 {
-    font-family: monospace, serif;
-    font-size: 2em;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    padding-left: 1em;
+ .subtitle {
+     font-size: 1.2em;
 }
-
-p2 {
-        margin-left: 5em;
-        padding: 21px 20px;
-        font-size: 1.2em;
+ .exp-subgrid {
+     display: grid;
+     margin: 10px 5% 10px 30px;
+     grid-template-columns: 1fr 2fr;
+     grid-template-rows: 1fr;
+     grid-template-areas : "exp-left exp-right";
 }
-
-.subtitle {
-    font-size: 1.2em;
-    
+ .exp-left {
+     grid-area: exp-left;
 }
-
-.exp-subgrid {
-    display: grid;
-    margin: 10px 5% 10px 30px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-        grid-template-areas  :
-        "exp-left exp-right";
+ .exp-right {
+     grid-area: exp-right;
 }
-
-.exp-left {
-    grid-area: exp-left;
+ .ref-subgrid {
+     display: grid;
+     margin: 10px 20px 0px 30px;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+     grid-template-areas : "ref-left ref-right";
 }
-
-.exp-right {
-    grid-area: exp-right;
+ .ref-left {
+     grid-area: ref-left;
+     text-align: center;
 }
-
-.ref-subgrid {
-    display: grid;
-    margin: 10px 20px 0px 30px;
-    grid-template-columns: 1fr  1fr;
-    grid-template-rows: 1fr;
-        grid-template-areas  :
-        "ref-left ref-right";
+ .ref-right {
+     grid-area: ref-right;
+     text-align: center;
 }
-
-.ref-left {
-    grid-area: ref-left;
-    text-align: center;
+ .edu-subgrid {
+     display: grid;
+     margin: 10px 5% 10px 30px;
+     grid-template-columns: 1fr 2fr;
+     grid-template-rows: 1fr;
+     grid-template-areas : "edu-left edu-right";
 }
-
-.ref-right {
-    grid-area: ref-right;
-    text-align: center;
+ .edu-left {
+     grid-area: edu-left;
 }
-
-.edu-subgrid {
-    display: grid;
-    margin: 10px 5% 10px 30px;
-    grid-template-columns: 1fr  2fr;
-    grid-template-rows: 1fr;
-        grid-template-areas  :
-        "edu-left edu-right";
+ .edu-right {
+     grid-area: edu-right;
 }
-
-.edu-left {
-    grid-area: edu-left;
+ a {
+     position: relative;
 }
-
-.edu-right {
-    grid-area: edu-right;
+ a:hover{
+     background: lightgreen;
 }
-
-a { 
-  position: relative;
+ a:visited{
+     color: red;
 }
-a:hover{
-    background: lightgreen;
+ a:active{
+     top: 1px;
 }
-
-a:visited{
-    color: red;
+ @media only screen and (max-width: 600px) {
+     body-grid {
+         display: grid;
+         grid-template-columns: 1fr !important;
+         grid-template-areas : "photo " "myname" "work" "education" "contact " "about " "community" "hobbies " !important;
+    }
 }
-
-a:active{
-    top: 1px;
-}
-
-@media only screen and (max-width: 600px) {
-  resume {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    grid-template-areas  :
-        "photo "
-        "myname"
-        "work"
-        "education"
-        "contact "
-        "about "
-        "community"
-        "hobbies " !important;
-        }
-}
+ 
