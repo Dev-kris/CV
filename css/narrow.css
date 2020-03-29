@@ -1,0 +1,118 @@
+.wrapper{
+     max-width: 1400px;
+     margin: 5px 1px 0px 20px;
+     font-family: Times ,Georgia;
+     font-size: 18px;
+     background-color: rgb(99, 147, 191,.4);
+}
+ .body-grid {
+     display: grid;
+     grid-template-columns:1;
+}
+ .photo {
+     order: 1;
+     display: flex;
+     height: auto;
+     margin: 45px auto;
+}
+ .myname{
+     order: 2;
+     text-align: center;
+     background-color: white;
+}
+ .contact{
+     order: 6;
+     text-align: center;
+}
+ .education{
+     order:3;
+     background-color: white;
+}
+ .about{
+     order: 7;
+}
+ .work{
+     order: 4;
+     background-color: white;
+}
+ .hobbies{
+     order: 7;
+}
+
+.hobby-pics {
+    display: flex;
+    margin:0px 20%;
+}
+
+ .community{
+     order: 8;
+     background-color: white;
+}
+ .left-bar-titles {
+     color: antiquewhite;
+     background: #6393bf;
+     text-align: center;
+     padding: 5px 5px;
+     margin-top: 0;
+}
+ .p-padding {
+     padding: 0px 20px;
+     word-wrap: break-word;
+}
+ .name-title {
+     font-family: monospace, serif;
+     font-size: 45pt;
+     margin-bottom: -20px;
+     padding-left: 66px;
+}
+ .section-title {
+     font-family: monospace, serif;
+     font-size: 33pt;
+     margin-bottom: 0px;
+     margin-top: 5px;
+     margin-left: 30px;
+     border-bottom: solid;
+     border-color:#6393bf;
+}
+ .name-subtitle {
+     margin-left: 70px;
+     font-size: 1.2em;
+}
+ .subtitle {
+     font-size: 1.2em;
+}
+ .exp-subgrid {
+     display: grid;
+     margin: 10px 5px 10px 30px;
+     grid-template-columns: 1fr 3fr;
+}
+
+ .ref-subgrid {
+     display: grid;
+     margin: 10px 20px 0px 30px;
+     grid-template-columns: 1fr 1fr;   
+}
+
+.ref-wrap {
+    word-wrap: break-word;
+}
+ .edu-subgrid {
+     display: grid;
+     margin: 10px 5px 10px 30px;
+     grid-template-columns: 1fr 3fr;
+}
+
+
+}
+ a {
+     position: relative;
+}
+ a:hover{
+     background: lightgreen;
+}
+ a:visited{
+     color: red;
+}
+ a:active{
+     top: 1px;
+}
