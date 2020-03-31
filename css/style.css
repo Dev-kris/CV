@@ -22,6 +22,7 @@
 }
  .contact{
      order: 3;
+     text-align: left;
 }
  .education{
      order:4;
@@ -41,8 +42,7 @@
      width: 22%;
      height: auto;
      position: relative;
-     top: 40%;
-     left: 15%;
+     padding: 14px;
 }
  .community{
      order: 8;

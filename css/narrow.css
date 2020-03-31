@@ -19,7 +19,7 @@
      background-color: white;
 }
  .contact{
-     order: 6;
+     order: 7;
      text-align: center;
 }
  .education{
@@ -27,20 +27,28 @@
      background-color: white;
 }
  .about{
-     order: 7;
+     order: 8;
 }
  .work{
      order: 4;
      background-color: white;
 }
  .hobbies{
-     order: 7;
+     order: 8;
 }
  .hobby-pics {
      display: flex;
 }
+
+ .hobbies img {
+     width: 22%;
+     height: auto;
+     position: relative;
+     left: 6%;
+     padding: 14px;
+}
  .community{
-     order: 8;
+     order: 6;
      background-color: white;
 }
  .left-bar-titles {
